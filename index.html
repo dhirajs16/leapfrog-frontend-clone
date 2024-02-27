@@ -12,29 +12,38 @@
 
 <body>
     <div id="main">
-        <div id="home" class="w-full h-[700vh]">
+        <div id="home" class="w-full h-[1100vh]">
             <!-- nav bar -->
-            <nav class="fixed w-full h-[120px] px-[8vw] flex justify-between items-center bg-slate-300">
+            <nav
+                class="fixed z-20 w-full h-[70px] lg:h-[120px] px-[4vw] lg:px-[8vw] flex justify-between items-center bg-white">
                 <div class="flex">
                     <img class="w-[35px] h-[30px]" src="./assets/logo.png" alt="">
-                    <h3>leapfrog</h3>
+                    <h3 class="text-2xl lg:text-4xl font-bold">leapfrog</h3>
                 </div>
-                <div class="flex gap-20">
-                    <a href="">Home</a>
-                    <a href="">Services</a>
-                    <a href="">Join Leapfrog</a>
-                    <a href="">Blog</a>
-                    <a href="">About us</a>
+                <div class="hidden lg:flex gap-20 text-lg">
+                    <a class="transition ease-in-out hover:text-[#038e43] hover:border-b-2 border-[#038e43]"
+                        href="">Home</a>
+                    <a class="transition ease-in-out hover:text-[#038e43] hover:border-b-2 border-[#038e43]"
+                        href="">Services</a>
+                    <a class="transition ease-in-out hover:text-[#038e43] hover:border-b-2 border-[#038e43]"
+                        href="">Join Leapfrog</a>
+                    <a class="transition ease-in-out hover:text-[#038e43] hover:border-b-2 border-[#038e43]"
+                        href="">Blog</a>
+                    <a class="transition ease-in-out hover:text-[#038e43] hover:border-b-2 border-[#038e43]"
+                        href="">About us</a>
                 </div>
-                <div class="bg-[#038e43] px-5 py-4 text-white">
+                <div class="hidden lg:flex bg-[#038e43] px-5 py-4 text-white">
                     <a href="">Build With Us</a>
+                </div>
+                <div class="max-lg:flex hidden">
+                    <img src="./assets/" alt="">
                 </div>
             </nav>
 
             <!-- hero section -->
-            <div class=" w-[84vw] mx-auto h-[100vh] pt-[120px] px-7 grid grid-cols-2">
+            <div class=" w-[84vw] mx-auto h-[100vh] lg:pt-[120px] lg:px-7 grid lg:grid-cols-2">
                 <div class="col-span-1 flex flex-col pt-[80px]">
-                    <h3 class="text-8xl font-extrabold flex">
+                    <h3 class="text-4xl lg:text-8xl font-extrabold flex">
                         <span>I</span>
                         <span>n</span>
                         <span>n</span>
@@ -44,7 +53,7 @@
                         <span>t</span>
                         <span>e</span>
                     </h3>
-                    <h3 class="text-8xl font-extrabold flex">
+                    <h3 class="text-4xl lg:text-8xl font-extrabold flex">
                         <span>b</span>
                         <span>e</span>
                         <span>t</span>
@@ -53,7 +62,7 @@
                         <span>r</span>
                         <span>,</span>
                     </h3>
-                    <h3 class="text-8xl text-[#038e43] font-extrabold flex">
+                    <h3 class="text-4xl lg:text-8xl text-[#038e43] font-extrabold flex">
                         <span>f</span>
                         <span>a</span>
                         <span>s</span>
@@ -62,28 +71,36 @@
                         <span>r</span>
                         <span>.</span>
                     </h3>
-                    <p class="text-2xl pt-5">We help businesses imagine and create the digital experiences of tomorrow.
+                    <p class="lg:text-2xl lg:pt-5">We help businesses imagine and create the digital experiences of
+                        tomorrow.
                         We succeed
                         together, through the fusion of startup agility, enterprise standards, and world-class
                         engineering.
                     </p>
-                    <div class="flex items-center pt-10 uppercase text-[#038e43] font-extrabold gap-10">
+                    <div class="hidden lg:flex items-center lg:pt-10 uppercase text-[#038e43] font-extrabold lg:gap-10">
                         <a href="">Build with us</a>
                         <a href="">join us</a>
                     </div>
                 </div>
                 <div class="col-span-1 flex justify-center items-center overflow-hidden">
-                    <div class="h-[95%] w-[95%] bg-slate-600 rounded-es-[140px]"></div>
+                    <div class="h-[250px] lg:h-[95%] w-full lg:w-[95%] bg-slate-600  lg:rounded-es-[140px]"></div>
+                </div>
+
+                <!-- mobile view -->
+                <div class="hidden max-lg:flex items-center pt-10 uppercase text-[#038e43] font-extrabold gap-10">
+                    <a href="">Build with us</a>
+                    <a href="">join us</a>
                 </div>
             </div>
 
             <!-- enterprices and startups -->
-            <div class="h-[100vh] w-[84vw] px-7 mx-auto pt-[120px]">
+            <div class="h-[100vh] lg:h-[85vh] w-[84vw] lg:px-7 mx-auto pt-[70px] lg:pt-[120px]">
                 <div class="flex flex-col justify-center">
-                    <h3 class="text-6xl text-center font-extrabold">Trusted by 150<span class="text-[#038e43]">+</span>
+                    <h3 class="text-3xl lg:text-6xl text-center font-extrabold">Trusted by 150<span
+                            class="text-[#038e43]">+</span>
                         enterprises, scale-ups and startups.
                     </h3>
-                    <p class="text-md text-center px-[18%] pt-10">
+                    <p class="text-md text-center lg:px-[18%] pt-10">
                         At Leapfrog, we have had the privilege of partnering with some of the most innovative and
                         forward-thinking companies in the tech industry. From big companies to startups that hope to be
                         big one day, they trust us with the expertise and support they need to bring their ideas to
@@ -103,15 +120,16 @@
             </div>
 
             <!-- ceo message -->
-            <div class="h-[70vh] w-[84vw] mx-auto flex items-center">
-                <div class="grid grid-cols-3 px-20">
-                    <div class="col-span-1">
-                        <img class="w-[78%] rounded-ee-[120px]" src="./assets/ceo.jpg" alt="">
+            <div class="h-[110vh] lg:h-[70vh] w-[84vw] mx-auto flex items-center">
+                <div class="lg:grid lg:grid-cols-3 lg:px-20">
+                    <div class="lg:col-span-1">
+                        <img class="sm:w-[350px] lg:w-[78%] lg:rounded-ee-[120px]" src="./assets/ceo.jpg" alt="">
                     </div>
                     <div class="col-span-2 flex flex-col justify-between gap-5">
                         <div class="flex flex-col gap-5">
                             <img class="w-[60px]" src="./assets/invertedcommas-removebg-preview.png" alt="">
-                            <p class="text-2xl text-pretty">It would have taken months to build the product team that we
+                            <p class="lg:text-2xl text-pretty">It would have taken months to build the product team that
+                                we
                                 <span class="font-bold">inherited overnight</span>
                                 with
                                 Leapfrog. <span class="font-bold">They’re built for startup speed,</span> and they have
@@ -120,20 +138,20 @@
                                 well-engineered product for us.
                             </p>
                         </div>
-                        <div class="flex justify-between h-[60px] self-baseline">
+                        <div class="flex max-lg:flex-col justify-between h-[60px] self-baseline">
                             <div>
-                                <h3 class="text-xl text-[#038e43] font-extrabold">Russ Richmond, MD</h3>
-                                <h3 class="text-lg">CEO of Laudio, recognized in KLAS 2022 Emerging Solutions</h3>
+                                <h3 class="lg:text-xl text-[#038e43] font-extrabold">Russ Richmond, MD</h3>
+                                <h3 class="lg:text-lg">CEO of Laudio, recognized in KLAS 2022 Emerging Solutions</h3>
                             </div>
-                            <img class="" src="./assets/laudia.jpg" alt="">
+                            <img class="max-lg:w-[40%]" src="./assets/laudia.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
 
             <!--  products-->
-            <div class="h-[100vh] w-[full]">
-                <nav class="h-[80px] w-[80%] mx-auto grid grid-rows-1 grid-flow-col text-lg">
+            <div class="h-[110vh] lg:h-[100vh] w-[full] max-lg:bg-black">
+                <nav class="max-lg:hidden h-[80px] w-[80%] mx-auto grid grid-rows-1 grid-flow-col text-lg">
                     <h3 class="flex items-center justify-center hover:font-bold hover:bg-black hover:text-white">Product
                         Technology</h3>
                     <h3 class="flex items-center justify-center hover:font-bold hover:bg-black hover:text-white">Team
@@ -145,33 +163,243 @@
                     <h3 class="flex items-center justify-center hover:font-bold hover:bg-black hover:text-white">DevOps
                         & Cloud</h3>
                 </nav>
-                <div class="h-[90%] w-full bg-black grid grid-cols-2 px-[10%] py-[5%]">
+                <div class="h-[90%] w-full  bg-black lg:grid grid-cols-2 px-[5%] lg:px-[10%] py-[5%]">
                     <div class="col-span-1 flex flex-col gap-10 text-white">
                         <h3 class="uppercase text-lg font-bold text-[#038e43]">Product & Technology</h3>
-                        <h3 class="text-6xl font-extrabold">Deliver value, not just products.</h3>
-                        <h3 class="text-2xl">Build digital experiences people love to use. Learn how we use
+                        <h3 class="text-2xl lg:text-6xl font-extrabold">Deliver value, not just products.</h3>
+                        <h3 class="text-lg lg:text-2xl">Build digital experiences people love to use. Learn how we use
                             battle-tested processes to
                             systematically design and develop software that solves problems, delights users, and
                             optimizes businesses.</h3>
-                        <a href="#" class="uppercase p-5 font-extrabold bg-[#038e48] w-[50%]">Explore Product
+                        <a href="#" class="uppercase px-2 lg:p-5 font-extrabold bg-[#038e48] w-[50%]">Explore Product
                             Engineering</a href="#">
                     </div>
-                    <div class="col-span-1 flex items-center justify-center">
+                    <div class="max-lg:pt-10 col-span-1 flex items-center justify-center">
                         <img src="./assets/product-removebg-preview.png" alt="">
                     </div>
                 </div>
             </div>
 
             <!-- case study -->
-            <div class="h-screen w-full bg-slate-200">
-                <div class="h-full w-[80%] mx-auto py-[7%] flex flex-col px-5 gap-5">
+            <div class="lg:h-[160vh] w-full bg-slate-200">
+                <div class="h-full lg:w-[80%] mx-auto py-[7%] flex flex-col px-5 gap-10">
                     <h3 class="uppercase font-bold text-lg">Case Studies</h3>
-                    <h3 class="text-5xl font-extrabold">We have <span class="text-[#038e43]">a proven track
+                    <h3 class="text-xl lg:text-5xl font-extrabold">We have <span class="text-[#038e43]">a proven track
                             record</span> of ambitious products in complex environments.</h3>
-                    <h3 class="text-2xl">Since 2010, we've had over 100 fast-growing companies build apps, data-driven products, and
+                    <h3 class="lg:text-2xl">Since 2010, we've had over 100 fast-growing companies build apps, data-driven
+                        products, and
                         cloud solutions that make an impact.</h3>
+
+                    <!-- images section -->
+                    <div class="lg:grid lg:grid-rows-1 grid-flow-col gap-10 pt-10">
+                        <div class="flex flex-col items-center bg-white pb-10 lg:rounded-ee-[100px] max-lg:mb-10">
+                            <img class="h-[400px] w-full max-lg:object-contain" src="./assets/signetic.jpg" alt="">
+                            <div class="px-10 grid gap-5">
+                                <h3 class="lg:text-2xl font-bold">We helped City of Seattle administer 1 million COVID
+                                    doese to reach 70% full
+                                    avaccination</h3>
+                                <p class="max-lg:text-sm">We beat Salesforce and Microsoft to be selected by City of Seattle as the end-to-end
+                                    vaccination solution that made Seattle become the 1st large US city to reach 70%
+                                    full
+                                    vaccinations. This made up king County's 82% doese.</p>
+                                <p class="text-xl font-extrabold text-[#038e43]">Read the story</p>
+                            </div>
+
+
+                        </div>
+                        <div class="flex flex-col items-center bg-white pb-10 lg:rounded-ee-[100px]">
+                            <img class="h-[400px] max-lg:object-contain" src="./assets/laudio2.jpg" alt="">
+                            <div class="px-10 grid gap-5">
+                                <h3 class="lg:text-2xl font-bold">We are leveraging AI and ML to help solve staff burnout
+                                    at 10+ large hospitals.</h3>
+                                <p class="max-lg:text-sm">We bulid a staff relationship management platform to achieve the vision to help
+                                    frontline
+                                    managers influence stronger staff enagement, satisfaction, and retention.</p>
+                                <p class="text-xl font-extrabold text-[#038e43]">Read the story</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+
+            <!-- skills -->
+            <div class="lg:h-[165vh] w-full">
+                <div class="h-full lg:w-[80%] mx-auto py-[10%] flex flex-col items-center gap-10">
+                    <h3 class="text-3xl lg:text-7xl font-extrabold"><span class="text-[#038e43]">Skills</span> at a glance</h3>
+                    <p class="lg:text-2xl text-center px-20">We support a breadth of technologies, best practices, use
+                        cases, and industries. Here are some of them.</p>
+
+                    <!-- nav -->
+                    <div>
+                        <nav class="max-lg:hidden h-[80px] px-[20%] grid grid-rows-1 grid-flow-col items-center gap-10">
+                            <a class="px-5 py-5 transition ease-in-out hover:font-bold hover:border-b-4 border-[#038e43] hover:text-[#038e43]"
+                                href="#">What we build</a>
+                            <a class="px-5 py-5 transition ease-in-out hover:font-bold hover:border-b-4 border-[#038e43] hover:text-[#038e43]"
+                                href="#">technologies</a>
+                            <a class="px-5 py-5 transition ease-in-out hover:font-bold hover:border-b-4 border-[#038e43] hover:text-[#038e43]"
+                                href="#">Practices</a>
+                            <a class="px-5 py-5 transition ease-in-out hover:font-bold hover:border-b-4 border-[#038e43] hover:text-[#038e43]"
+                                href="#">Industries</a>
+                        </nav>
+
+                        <!-- technologies -->
+                        <div class="grid lg:grid-rows-2 lg:grid-flow-col lg:mt-10 gap-10 max-lg:px-10">
+                            <div
+                                class="flex flex-col justify-between p-3 rounded-xl transition ease-out hover:scale-105 hover:bg-slate-200 max-lg:border-2">
+                                <img src="./assets/sd.jpg" alt="">
+                                <h3>Crafting tailored software solutions aligned with your vision, driving efficiency
+                                    and innovation through precise coding.</h3>
+                            </div>
+                            <div
+                                class="flex flex-col justify-between p-3 rounded-xl transition ease-out hover:scale-105 hover:bg-slate-200 max-lg:border-2">
+                                <img src="./assets/st.jpg" alt="">
+                                <h3>Ensuring impeccable software quality through rigorous testing, assuring reliability
+                                    and user satisfaction with every release.</h3>
+                            </div>
+                            <div
+                                class="flex flex-col justify-between p-3 rounded-xl transition ease-out hover:scale-105 hover:bg-slate-200 max-lg:border-2">
+                                <img src="./assets/blockchain.jpg" alt="">
+                                <h3>Guiding exploration of blockchain's secure potential, integrating transparency and
+                                    trust into transformative initiatives.</h3>
+                            </div>
+                            <div
+                                class="flex flex-col justify-between p-3 rounded-xl transition ease-out hover:scale-105 hover:bg-slate-200 max-lg:border-2">
+                                <img src="./assets/infraDev.jpg" alt="">
+                                <h3>Building robust foundations and agile workflows for scalability and security while
+                                    embracing continuous development methodologies.</h3>
+                            </div>
+                            <div
+                                class="flex flex-col justify-between p-3 rounded-xl transition ease-out hover:scale-105 hover:bg-slate-200 max-lg:border-2">
+                                <img src="./assets/mobiledev.jpg" alt="">
+                                <h3>Creating seamless digital journeys with user-centric design, marrying aesthetics and
+                                    functionality for unparalleled cross-platform experiences.</h3>
+                            </div>
+                            <div
+                                class="flex flex-col justify-between p-3 rounded-xl transition ease-out hover:scale-105 hover:bg-slate-200 max-lg:border-2">
+                                <img src="./assets/ds.jpg" alt="">
+                                <h3>Unveiling insights from complex data landscapes, empowering strategic decisions and
+                                    breakthroughs through advanced analytics and machine learning.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- tech partners -->
+            <div class="lg:h-[85vh] w-full bg-slate-200">
+                <div class="h-full lg:w-[80%] mx-auto lg:grid grid-cols-3 max-lg:py-10">
+                    <!-- img -->
+                    <div class="max-lg:hidden col-span-1">
+                        <img class="h-full object-cover" src="./assets/techpartner.png" alt="">
+                    </div>
+                    <!-- content -->
+                    <div class="col-span-2 px-10 flex flex-col justify-center gap-10">
+                        <h3 class="uppercase font-bold text-xl">The leapfrog difference</h3>
+                        <div class="flex flex-col gap-5">
+                            <h3 class="text-3xl lg:text-6xl font-bold">We strive to be a <span class="text-[#038e43]">better
+                                    technology partner.</span></h3>
+                            <h3 class="text-lg lg:text-2xl font-semibold">At our core, we are 450 people obsessed with innovating
+                                with technology in the right
+                                ways.
+                            </h3>
+                        </div>
+
+                        <p>We are 100% oriented around solving your problems and making you successful. If you need
+                            skilled people, we make sure they have the talent and nature to plug right into your team.
+                            When you have a job for us, we move mountains to make sure it’s done well and on time. We
+                            pride ourselves on earning your trust, providing demonstrable value, and being great at what
+                            we do - together.
+                        </p>
+                        <a class="uppercase px-5 py-3 bg-[#038e43] lg:w-[30%] text-xl text-white font-semibold text-center"
+                            href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- books -->
+            <div class="lg:h-[100vh] w-full max-lg:p-5">
+                <div class="h-[70%] lg:w-[80%] mx-auto mt-[10%] flex flex-col justify-between">
+                    <div class="flex flex-col gap-5 text-center">
+                        <h3 class="text-4xl lg:text-7xl font-extrabold">See <span class="text-[#038e43]">what</span> we are thinking
+                        </h3>
+                        <h3 class="lg:text-2xl">We're not just doers, we're tinkerers and thinkers obsessed with building
+                            new things in
+                            better
+                            ways. Read some of our insights, download our playbooks.</h3>
+                    </div>
+                    <div class="lg:grid grid-rows-1 grid-flow-col gap-5">
+                        <div class="flex flex-col items-center justify-between gap-3 max-lg:mt-10 max-lg:border-2 max-lg:pb-5">
+                            <img src="./assets/book1.jpg" alt="">
+                            <h3 class="text-center">Guide to a bulletproof design sprint aligning the goals of clients
+                                and end-users.</h3>
+                            <button class="uppercase px-5 py-3 bg-[#038e43] font-bold text-white">Get the book</button>
+                        </div>
+                        <div class="flex flex-col items-center justify-between gap-3 max-lg:mt-10 max-lg:border-2 max-lg:pb-5">
+                            <img src="./assets/book2.jpg" alt="">
+                            <h3 class="text-center">The product development roadmap that enables companies small or
+                                large build defensible digital products.</h3>
+                            <button class="uppercase px-5 py-3 bg-[#038e43] font-bold text-white">Get the book</button>
+
+                        </div>
+                        <div class="flex flex-col items-center justify-between gap-3 max-lg:mt-10 max-lg:border-2 max-lg:pb-5">
+                            <img src="./assets/book3.jpg" alt="">
+                            <h3 class="text-center">Drills down the basics about what DevOps is and how you should be
+                                following a DevOps culture.</h3>
+                            <button class="uppercase px-5 py-3 bg-[#038e43] font-bold text-white">Get the book</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- get started -->
+            <div class="lg:h-[120vh] w-full bg-black">
+                <div class="h-full lg:w-[80%] mx-auto py-[5%] max-lg:px-10">
+                    <!-- text -->
+                    <h3 class="text-center text-3xl lg:text-7xl text-[#038e43] font-bold">Ready to get started?</h3>
+                    <!-- img -->
+                    <div class="h-[70%] lg:grid grid-rows-1 grid-flow-col gap-10 pt-20">
+                        <div class="">
+                            <img class="" src="./assets/rocket.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <img class="" src="./assets/boat.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- query form -->
+                    <div class="flex max-lg:flex-col pt-20 gap-10 justify-center">
+                        <h3 class="text-3xl font-bold text-[#038e43]">Stay in the loop</h3>
+                        <form action="#" class="flex max-lg:flex-col gap-10">
+                            <input class="h-[40px] w-[360px] ps-3 bg-slate-800 text-white" type="email" name="email"
+                                placeholder="Your email addresss">
+                            <button class="px-5 py-2 bg-white text-black font-semibold" type="submit">Subscribe for
+                                updates</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- contacts -->
+            <div class="h-screen w-full bg-black">
+                <div class="h-[80%] w-[90%] mx-auto border-t-2 border-slate-400 grid grid-cols-4">
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                </div>
+                <!-- copyright section -->
+                <div class="h-[20%] w-[90%] mx-auto border-t-2 border-slate-400 flex max-lg:flex-col max-lg:justify-center items-center justify-between max-lg:gap-10">
+                    <h3 class=" text-white">Copyright 2024 Leapfrog Technology, Inc</h3>
+                    <div class="flex gap-10 font-semibold lg:text-xl text-white cursor-pointer">
+                        <h3>Privacy Policy </h3>
+                        <h3>Data Policy</h3>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>

@@ -12,9 +12,9 @@
 
 <body>
     <div id="main">
-        <div id="home" class="w-full h-[400vh]">
+        <div id="home" class="w-full h-[700vh]">
             <!-- nav bar -->
-            <nav class="fixed w-full h-[120px] px-[8vw] flex justify-between items-center bg-white">
+            <nav class="fixed w-full h-[120px] px-[8vw] flex justify-between items-center bg-slate-300">
                 <div class="flex">
                     <img class="w-[35px] h-[30px]" src="./assets/logo.png" alt="">
                     <h3>leapfrog</h3>
@@ -26,13 +26,13 @@
                     <a href="">Blog</a>
                     <a href="">About us</a>
                 </div>
-                <div>
+                <div class="bg-[#038e43] px-5 py-4 text-white">
                     <a href="">Build With Us</a>
                 </div>
             </nav>
 
             <!-- hero section -->
-            <div class=" w-[84vw] mx-auto h-[100vh] bg-slate-200 pt-[120px] px-7 grid grid-cols-2 text-[poppins]">
+            <div class=" w-[84vw] mx-auto h-[100vh] pt-[120px] px-7 grid grid-cols-2">
                 <div class="col-span-1 flex flex-col pt-[80px]">
                     <h3 class="text-8xl font-extrabold flex">
                         <span>I</span>
@@ -53,7 +53,7 @@
                         <span>r</span>
                         <span>,</span>
                     </h3>
-                    <h3 class="text-8xl font-extrabold flex">
+                    <h3 class="text-8xl text-[#038e43] font-extrabold flex">
                         <span>f</span>
                         <span>a</span>
                         <span>s</span>
@@ -62,11 +62,12 @@
                         <span>r</span>
                         <span>.</span>
                     </h3>
-                    <p class="text-2xl pt-5">We help businesses imagine and create the digital experiences of tomorrow. We succeed
+                    <p class="text-2xl pt-5">We help businesses imagine and create the digital experiences of tomorrow.
+                        We succeed
                         together, through the fusion of startup agility, enterprise standards, and world-class
                         engineering.
                     </p>
-                    <div class="flex items-center pt-10 uppercase font-bold gap-10">
+                    <div class="flex items-center pt-10 uppercase text-[#038e43] font-extrabold gap-10">
                         <a href="">Build with us</a>
                         <a href="">join us</a>
                     </div>
@@ -75,8 +76,107 @@
                     <div class="h-[95%] w-[95%] bg-slate-600 rounded-es-[140px]"></div>
                 </div>
             </div>
+
+            <!-- enterprices and startups -->
+            <div class="h-[100vh] w-[84vw] px-7 mx-auto pt-[120px]">
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-6xl text-center font-extrabold">Trusted by 150<span class="text-[#038e43]">+</span>
+                        enterprises, scale-ups and startups.
+                    </h3>
+                    <p class="text-md text-center px-[18%] pt-10">
+                        At Leapfrog, we have had the privilege of partnering with some of the most innovative and
+                        forward-thinking companies in the tech industry. From big companies to startups that hope to be
+                        big one day, they trust us with the expertise and support they need to bring their ideas to
+                        life.
+                    </p>
+                    <div class="grid grid-rows-4 md:grid-rows-3 lg:grid-rows-2 grid-flow-col mt-10">
+                        <div><img src="./assets/ms.jpg" alt=""></div>
+                        <div><img src="./assets/pingidentity.jpg" alt=""></div>
+                        <div><img src="./assets/laudia.jpg" alt=""></div>
+                        <div><img class="object-center" src="./assets/ucfs.jpg" alt=""></div>
+                        <div><img src="./assets/keller.jpg" alt=""></div>
+                        <div><img src="./assets/phill.jpg" alt=""></div>
+                        <div><img src="./assets/mhealth.jpg" alt=""></div>
+                        <div><img src="./assets/macmillan.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ceo message -->
+            <div class="h-[70vh] w-[84vw] mx-auto flex items-center">
+                <div class="grid grid-cols-3 px-20">
+                    <div class="col-span-1">
+                        <img class="w-[78%] rounded-ee-[120px]" src="./assets/ceo.jpg" alt="">
+                    </div>
+                    <div class="col-span-2 flex flex-col justify-between gap-5">
+                        <div class="flex flex-col gap-5">
+                            <img class="w-[60px]" src="./assets/invertedcommas-removebg-preview.png" alt="">
+                            <p class="text-2xl text-pretty">It would have taken months to build the product team that we
+                                <span class="font-bold">inherited overnight</span>
+                                with
+                                Leapfrog. <span class="font-bold">They’re built for startup speed,</span> and they have
+                                consistently delivered
+                                a
+                                well-engineered product for us.
+                            </p>
+                        </div>
+                        <div class="flex justify-between h-[60px] self-baseline">
+                            <div>
+                                <h3 class="text-xl text-[#038e43] font-extrabold">Russ Richmond, MD</h3>
+                                <h3 class="text-lg">CEO of Laudio, recognized in KLAS 2022 Emerging Solutions</h3>
+                            </div>
+                            <img class="" src="./assets/laudia.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  products-->
+            <div class="h-[100vh] w-[full]">
+                <nav class="h-[80px] w-[80%] mx-auto grid grid-rows-1 grid-flow-col text-lg">
+                    <h3 class="flex items-center justify-center hover:font-bold hover:bg-black hover:text-white">Product
+                        Technology</h3>
+                    <h3 class="flex items-center justify-center hover:font-bold hover:bg-black hover:text-white">Team
+                        Agumentation</h3>
+                    <h3 class="flex items-center justify-center hover:font-bold hover:bg-black hover:text-white">Design
+                    </h3>
+                    <h3 class="flex items-center justify-center hover:font-bold hover:bg-black hover:text-white">Data &
+                        AI</h3>
+                    <h3 class="flex items-center justify-center hover:font-bold hover:bg-black hover:text-white">DevOps
+                        & Cloud</h3>
+                </nav>
+                <div class="h-[90%] w-full bg-black grid grid-cols-2 px-[10%] py-[5%]">
+                    <div class="col-span-1 flex flex-col gap-10 text-white">
+                        <h3 class="uppercase text-lg font-bold text-[#038e43]">Product & Technology</h3>
+                        <h3 class="text-6xl font-extrabold">Deliver value, not just products.</h3>
+                        <h3 class="text-2xl">Build digital experiences people love to use. Learn how we use
+                            battle-tested processes to
+                            systematically design and develop software that solves problems, delights users, and
+                            optimizes businesses.</h3>
+                        <a href="#" class="uppercase p-5 font-extrabold bg-[#038e48] w-[50%]">Explore Product
+                            Engineering</a href="#">
+                    </div>
+                    <div class="col-span-1 flex items-center justify-center">
+                        <img src="./assets/product-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- case study -->
+            <div class="h-screen w-full bg-slate-200">
+                <div class="h-full w-[80%] mx-auto py-[7%] flex flex-col px-5 gap-5">
+                    <h3 class="uppercase font-bold text-lg">Case Studies</h3>
+                    <h3 class="text-5xl font-extrabold">We have <span class="text-[#038e43]">a proven track
+                            record</span> of ambitious products in complex environments.</h3>
+                    <h3 class="text-2xl">Since 2010, we've had over 100 fast-growing companies build apps, data-driven products, and
+                        cloud solutions that make an impact.</h3>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 
 </html>
+
+
+<!-- #038e43 -->
